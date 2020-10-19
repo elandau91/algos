@@ -16,4 +16,9 @@
         //from one position to another.
         //Depending on a certain condition, the window either increases or closes
         //Very useful for keeping track of data in a an array/string
+
+    //"Divide & Conquer"
+        //This pattern invovles dividing a data set into smaller chunks
+        //Then repeating a process with a subset of data
+        //This pattern can tremendously decrease time complexity
         
