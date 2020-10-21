@@ -8,7 +8,7 @@ function countDown(num){
     num--;
     countDown(num);
 }
-console.log(countDown(3))
+//console.log(countDown(3))
 
 // Iterative Version
 function countDown(num){
