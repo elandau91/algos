@@ -32,3 +32,8 @@
         //Base Case (when recursion stops)
         //Different Input
 
+
+//Where Recursion goes wrong
+    //No Base Case
+    //Returning wrong value, or forgetting to return!
+    //Stack overflow! if recursion does not stop
