@@ -3,45 +3,36 @@ const names = ['tim', 'helen', 'tom', 'tammy', 'jason']
 // capitalize first letter
 // sort the array
 
-// function sortNames(names, letter) {
-// 	let arr = []
+function sortNames(names, letter) {
+	let arr = []
 
-// 	for (let i =0; i < names.length; i++) {
-// 		if (names[i].charAt(0) === letter) {
-// 			//console.log(names[i])
-// 			arr.push(letter.toUpperCase() + names[i].slice(1))
-// 		}
+	for (let i =0; i < names.length; i++) {
+		if (names[i].charAt(0) === letter) {
+			//console.log(names[i])
+			arr.push(letter.toUpperCase() + names[i].slice(1))
+		}
 
-// 	}
+	}
 
 	
 
-// 	return arr.sort()
-// }
+	return arr.sort()
+}
 
-// console.log(sortNames(names, "j"))
+//console.log(sortNames(names, "j"))
 
-// const state = { t1: { name: 'John' } }
-// const obj = { id: 't2', payload: { name: 'Tom' } }
-// // { t1: { name: 'John' }, t2: { name: 'Tom' } }
-// const obj2 = { ...state, [obj.id]: obj.payload }
+const state = { t1: { name: 'John' } }
+const obj = { id: 't2', payload: { name: 'Tom' } }
+// { t1: { name: 'John' }, t2: { name: 'Tom' } }
+const obj2 = { ...state, [obj.id]: obj.payload }
 
-// const objManipulator = (state, obj) => {
-// 	let value = obj.payload
-// 	// value['']
-	
-// 	let newObj = Object.assign({}, state
 
-//     newObj[obj.id] = obj.payload
+//console.log(objManipulator(state, obj))
 
-// 	return newObj
-// }
+const t1 = { name: 'Tim' }
+t1['age'] = 30
+//console.log(t1)
 
-// console.log(objManipulator(state, obj))
-// []
-// const t1 = { name: 'Tim' }
-// t1['age'] = 30
-// console.log(t1)
 // spread operator and bracket notation
 
 // Write a function that returns the number of vowels
@@ -54,28 +45,28 @@ const names = ['tim', 'helen', 'tom', 'tammy', 'jason']
 
 // O(n*n) = O(n^2)
 // O(n)
-// function vowels(str) {
-// 	let arr = str.split('')
-// 	let newArr = []
-// 	let count = 0
+function vowels(str) {
+	let arr = str.split('')
+	let newArr = []
+	let count = 0
 
-// 	let vowelObj = { a: true, e: true, i: true, o: true, u: true}
+	let vowelObj = { a: true, e: true, i: true, o: true, u: true}
 
-// 	for (let i = 0; i < arr.length; i++) {
-// 		// vowelObj['a']
-// 		if (vowelObj[arr[i]]) {
-// 			count += 1
-// 		} 
-// 	}
+	for (let i = 0; i < arr.length; i++) {
+		// vowelObj['a']
+		if (vowelObj[arr[i]]) {
+			count += 1
+		} 
+	}
 
-// 	// for (let i = 0; i < arr.length; i++) {
-// 	// 	// includes
-// 	// 	if (vowelArr.includes(arr[i])) {
-// 	// 		newArr.push(arr[i])
-// 	// 	}
-// 	// }
-// 	return count
-// }
+	// for (let i = 0; i < arr.length; i++) {
+	// 	// includes
+	// 	if (vowelArr.includes(arr[i])) {
+	// 		newArr.push(arr[i])
+	// 	}
+	// }
+	return count
+}
 
 // console.log(vowels('Hi There!'))
 
