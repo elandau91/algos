@@ -5,10 +5,7 @@ function someRecursive(arr, callback) {
     if (callback(arr[0]) === true) {
         return true
     } 
-
-
     return someRecursive(arr.slice(1), callback)
-    
     
 }
 
