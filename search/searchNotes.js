@@ -29,3 +29,11 @@
         //Averagee case O(log n) - incredibly good! the size of the ray logged is how many tries it will take max
         //Worst Case O(log n) - for example, if there are 32 elements, the max is 2 * 2 * 2 * 2, only 4 tries ;)
     //Can only use with sorted data
+
+
+//Naive String Search
+    //Finding substrings within a larger string
+    //Outer loop for big string, inner loop for smaller string
+
+
+//KNP COMING SOON
