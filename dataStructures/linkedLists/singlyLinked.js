@@ -99,6 +99,58 @@ class SinglyLinkedList{
         return true
     }
 
+    insert(index, value) {
+        if (index < 0 || index > this.length) return false
+        if (index === this.length) return !!this.push(value)
+        if (index === 0) return !!this.unshift(value)
+
+            let pos = this.get(index - 1)
+            let newNode = new Node(value)
+            let prevNext = pos.next
+            pos.next = newNode
+            newNode.next = prevNext
+            this.length++
+            return true
+
+    }
+
+    remove(index) {
+        if (index < 0 || index >= this.length) return false;
+        if (index === this.length - 1) return this.pop();
+        if(index === 0) return this.shift();
+
+        let pos = this.get(index - 1)
+        let byebye = pos.next
+        pos.next = byebye.next
+        this.length--
+        return byebye
+    }
+
+    reverse(){
+        var node = this.head;
+        this.head = this.tail;
+        this.tail = node;
+        var next;
+        var prev = null;
+        for(var i = 0; i < this.length; i++){
+          next = node.next;
+          node.next = prev;
+          prev = node;
+          node = next;
+        }
+        return this;
+      }
+
+      print(){
+        var arr = [];
+        var current = this.head
+        while(current){
+            arr.push(current.val)
+            current = current.next
+        }
+        console.log(arr);
+    }
+
 }
 
 
@@ -114,5 +166,6 @@ list.push("bringing")
 list.push("me")
 list.push("down")
 
-console.log(list.set(3, "me"))
+console.log(list.remove(8))
+
 //console.log(list)

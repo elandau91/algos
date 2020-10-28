@@ -8,3 +8,11 @@
         //Random access is not allowed! If you want 10th item, you have to traverse one by one to get to 10.
         //BUT insertion and deletion are better with linked lists!
             //You don't need to worry about the time/space of re-assigning indexes
+        //BIG O of singly linked lists
+            //insertion - O(1)
+            //Removal - O(1) OR O(n)
+            //Searching - O(n)
+            //Access - O(n)
+        //Single Linked Lists are an excellent alternative to arrays when insertion and deletion is frequently required at beginning of data structure
+        //Arrays are good at removing from the end, and have built in index whereas Linked Lists do not
+        //The idea of list data structures that consists of nodes is the foundation for other data structures like Stacks & Queues
