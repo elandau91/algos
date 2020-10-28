@@ -2,6 +2,8 @@
 
     //Class is a blueprint for creating objects with pre-defined properties and methods
     //JS Classes are syntantical sugar, JS is really prototypal for inheritance
+    //Class instances are created with the new keyword
+    //The constructor function is a special function that gets run when the class is instantiated
 
     //CLASS SYNTAX
 
