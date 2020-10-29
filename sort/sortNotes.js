@@ -19,7 +19,6 @@
             //Usually O(n2)
             //With optmized, best case is O(n)
         //Bubble sort only really makes sense if you know data is mostly sorted already
-
     
     //SELECTION SORT
         //Similar to bubble sort, but you place small values into a sorted position first instead of large ones
@@ -30,7 +29,6 @@
         //Selection sort is better than bubble sort only if you want to minimize amount of swaps for some reason
             //Not common, but if you had some strange memory concerns
 
-
     //INSERTION SORT
         //Builds up sort, by gradually creating larger half which is always sorted
         //Inserts each element in proper place in sorted half
@@ -38,4 +36,11 @@
             //Usually O(n2)
             //If data is nearly sorted, insertion sort works well.
         //If you need to input a number instantly, insertion sort works well because you can do so easily and place it in the array.
+
+    //All elementary algos have space complexity of O(1)
+    //Sorting is fundamental
+    //Bubble Sort, Selection Sort and Insertion Sort are roughly equivalent
+    //Average time complexities are quadratic
+        //We can do better ;)
+
 
