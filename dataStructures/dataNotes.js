@@ -22,4 +22,9 @@
         //Almost identical to singly linked lists, except every node has an additional pointer, to the previous node
         //It makes certain operations much simpler, because you have an additional pointer for previous
         //It does however require more memory. More memory === more flexibility
-        
+        //Big O of Doubly Linked Lists
+            //Insertion - O(1)
+            //Removal - O(1)
+            //Searching - O(n) (technically searching is O(n/2), but that's still O(n))
+            //Access - O(n)
+        //
