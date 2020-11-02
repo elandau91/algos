@@ -16,3 +16,10 @@
         //Single Linked Lists are an excellent alternative to arrays when insertion and deletion is frequently required at beginning of data structure
         //Arrays are good at removing from the end, and have built in index whereas Linked Lists do not
         //The idea of list data structures that consists of nodes is the foundation for other data structures like Stacks & Queues
+
+    
+    //Doubly Linked Lists
+        //Almost identical to singly linked lists, except every node has an additional pointer, to the previous node
+        //It makes certain operations much simpler, because you have an additional pointer for previous
+        //It does however require more memory. More memory === more flexibility
+        
