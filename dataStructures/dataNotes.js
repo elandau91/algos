@@ -27,4 +27,10 @@
             //Removal - O(1)
             //Searching - O(n) (technically searching is O(n/2), but that's still O(n))
             //Access - O(n)
-        //
+        //Doubly Linked lists are similar to singly, except there is a previous attribute serving as an additional pointer
+        //Browser windows have forward and previous buttons. Doubly linked list right there
+        //Doubly Linked lists are better at finding things (because you can go in either direction)
+            //BUT it takes up more memory with the extra attribute
+
+    
+    
