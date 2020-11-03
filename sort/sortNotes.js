@@ -60,3 +60,18 @@
                 //It's n log n, because it's logarithmic, since it needs to split and recombined.
                     //Each split and join is a division/multiplication by 2. A logarithm
         //This keeps track of decomposition and recomposition 
+
+    //QUICK SORT
+        //Similar to Merge sort, we'll break down arrays into 1 or 0 since those are sorted
+        //But then, we select one element called the "pivot" and find the index where the pivot should end up in a sorted array
+        //Once the pivot is positioned appropriately, quick sort can be applied on either side of the pivot
+            //Runtime of quick sort changes depending on what pivot point is
+            //For best result choose a medium value, for simplicity, you can choose the 1st element
+            //Big O - Time Complexity
+                //Best/Average case - O(n log n)
+                //Worst - O(n2)
+                    //If we take first element as pivot, and array is already sorted, we have to loop through full array
+                        //You could also be unlucky by choosing minimum or maximum which would cause quadratic time            
+                //Space Complexity
+                    //O(log n)
+            
