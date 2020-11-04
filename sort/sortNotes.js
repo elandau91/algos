@@ -15,6 +15,9 @@
         //Elementary Algos work well on small data sets (20 items), but don't scale well when data gets larger (10,000 items)
         //Intermediate Algos work well for big data sets.
         //Intermediate Algos improve sort time from O(n) to O(n log n)
+        //Comparison-based Sorts (bubble, selection, insertion, quick, merge) have an asymptote for the fast they can be.
+            //Comparison based sorting is comparing one elements with one other element at a time
+            //The max speed of comparison based sorting is O(n log n)
         
 
 //QUADRATIC OR ELEMENTARY ALGORITHMS
@@ -74,4 +77,16 @@
                         //You could also be unlucky by choosing minimum or maximum which would cause quadratic time            
                 //Space Complexity
                     //O(log n)
+
+    //RADIX SORT
+        //Radix sort is a special sorting algorithm and only works on lists of numbers
+        //It doesn't make comparisons between elements.
+        //Instead, it exploits the fact that information about the size of a number is encoded in the number of digits
+        //Big O
+            //Best/Average/Worst - O(nk) 
+                //k refers to number of digits
+                //This can be much better than comparison sort, but if you're dealing with a lot of digits/unique digits, it becomes n log n
+        //Fun/quirky way to sort numbers without comparing them to each other
+
+
             
