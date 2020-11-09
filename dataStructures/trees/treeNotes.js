@@ -21,5 +21,21 @@
         //Folders in OS: You have folders with files in them, and other folders, like on your Mac, etc
         //JSON: Can be represented in tree structure
         
-    //Types of Trees
-        //Binary Trees
+    //Binary Trees
+        //Each node can have at most two children. Either zero, one or two children per node.
+        //If there are more than three children it is not a binary tree.
+
+        //Binary Search Trees
+            //Like Binary Trees except they are also sorted in a specific way.
+                //Every node to left of parent is always less than the parent
+                //Every node to right of parent isd always greater than the parent
+            //These are used because it is easy to search for elements
+                //It's fast because like binary search, each iteration cuts possible elements in half (more or less)
+            //Big O of Binary Search Trees
+                //Insertion - O(log n)
+                //Searching - O(log n)
+                    //Both are best and average, but not guaranteed
+                        //If you double number of nodes, you only increase by 1 step
+                        //Like Binary Search, it cuts things in half
+                        //Not guaranteed because some configurations that resemble linked lists are slow and one-sided
+        
