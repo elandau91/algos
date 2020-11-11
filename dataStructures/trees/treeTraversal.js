@@ -35,7 +35,7 @@ function bfs(tree){
             let current = queue[0]
             queue.shift()
             visited.push(current)
-            
+
             if (current.left) {
                 queue.push(current.left)
             }
@@ -47,5 +47,49 @@ function bfs(tree){
       return visited  
 }
 
-console.log(bfs(tree))
+function dfsPreorder(tree){
+    let visited = []
+    let current = tree.root
+
+    function traverse(node){
+        visited.push(node)
+        if (node.left) traverse(node.left)
+        if (node.right) traverse(node.right)
+    }
+
+    traverse(current)
+    return visited
+}
+
+function dfsPostorder(tree){
+    let visited = []
+    let current = tree.root
+
+    function traverse(node){
+        if (node.left) traverse(node.left)
+        if (node.right) traverse(node.right)
+        visited.push(node)
+    }
+
+    traverse(current)
+    return visited
+}
+
+function dfsInorder(tree){
+    let visited = []
+    let current = tree.root
+
+    function traverse(node){
+        if (node.left) traverse(node.left)
+        visited.push(node)
+        if (node.right) traverse(node.right)
+    }
+
+    traverse(current)
+    return visited
+}
+
+
+
+console.log(dfsInorder(tree))
 

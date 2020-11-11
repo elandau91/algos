@@ -92,6 +92,48 @@ class BinarySearchTree {
     
           return visited  
     }
+
+    dfsPreorder(){
+        let data = []
+        let current = this.root
+
+        function traverse(node){
+            data.push(node)
+            if (node.left) traverse(node.left)
+            if (node.right) traverse(node.right)
+        }
+
+        traverse(current)
+        return data
+    }
+
+    dfsPostorder(){
+        let data = []
+        let current = this.root
+    
+        function traverse(node){
+            if (node.left) traverse(node.left)
+            if (node.right) traverse(node.right)
+            data.push(node)
+        }
+    
+        traverse(current)
+        return data
+    }
+
+    dfsInorder(){
+        let data = []
+        let current = this.root
+    
+        function traverse(node){
+            if (node.left) traverse(node.left)
+            data.push(node)
+            if (node.right) traverse(node.right)
+        }
+    
+        traverse(current)
+        return data
+    }
 }
 
 var tree = new BinarySearchTree();
