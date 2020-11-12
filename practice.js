@@ -5,3 +5,4 @@ let k = 3
 console.log(nums.splice(-k))
 //console.log(nums.slice(-k).concat(nums.slice(0,-k)))
 
+
