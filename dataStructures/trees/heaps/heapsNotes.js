@@ -33,5 +33,13 @@
         //Heaps have time complexity of log n much faster than array
         //Priority queues are commonly associated and confused with heaps (since they are structred this way often)
 
-        
+    //BIG O of HEAPS
+        //Insertion - O(log n)
+        //Removal - O(log n)
+        //Searching - O(n)
+            //Heaps are very fast for insertion and removal
+            //Since all parents have two childrens in heaps, you only have to compare it to row once
+                //2 to what power gives you amount of nodes
+            //Heaps always have same structure, so this is always the time complexity.
+        //Very good for insertion and removal, just okay for searching 
         
