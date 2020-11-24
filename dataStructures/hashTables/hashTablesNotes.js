@@ -12,4 +12,16 @@
         //Ruby has Hashes
     
     //This section is focused on building hashes, or objects in JS
+        //Hashes help with human readibility (using keys over indexes)
+        //We therefore need a way to convert keys to indices (for computer readability)
+        //This is done with Hash Functions
     
+
+    //HASH FUNCTIONS
+        //A function that takes data of arbitrary size, and outputs data of a fixed size
+        //What makes a good hash? (not a cryptographically secure one)
+            //Fast (constant time)
+            //Distributes indices uniformly
+            //Want it to be deterministic (same input will always get you same output)
+        
+        
