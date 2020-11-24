@@ -24,4 +24,10 @@
             //Distributes indices uniformly
             //Want it to be deterministic (same input will always get you same output)
         
+        //Handling Collisions
+            //Seperate Chaining
+                //Store collided things in same index, but in nested array
+            //Linear Probing
+                //We store one piece of data in one position, and move collided element to next empty spot
+
         
